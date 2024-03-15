@@ -6,5 +6,9 @@
 
 {% block content %}
     <!--page content-->
-    <h1>Page 1</h1>
+	<h1>page 1</h1>
+<div  class="mb-4 container-fluid ">
+    <h1>Your recommended song genre is {{response}}</h1>
+    <h4>songs: <img src="{{songimage}}" alt="{{imagename}}">{{ response2 }}</h4>
+</div>
 {% endblock %}
