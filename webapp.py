@@ -14,18 +14,49 @@ def render_page1():
     optradio4 = request.args ['optradio4']
     
     rules1 = [optradio1 == 'option1', optradio2 == 'option5' or 'option1', optradio3 == 'option2']
-    rules2 = [optradio1 == 'option1', optradio2 == 'option5', optradio3 == 'option1']
+    rules2 = [optradio1 == 'option1', optradio2 == 'option5' or 'option2', optradio3 == 'option1']
+    rules3 = [optradio1 == 'option1', optradio2 == 'option3', optradio3 == 'option1']
+    rules6 = [optradio1 == 'option1'or 'option2', optradio2 == 'option3', optradio3 == 'option2']
+    rules4 = [optradio1 == 'option1' or 'option2', optradio2 == 'option3' or 'option5', optradio3 == 'option2']
+    rules5 = [optradio1 == 'option2', optradio2 == 'option3' or 'option4', optradio3 == 'option2']
     
-    image = 'Daisy.jpg'
+    image = 'static/Daisy.jpg'
     alttext = 'daisy'
     
     if all(rules1) and optradio4 == 'option3':
         song = 'Day in The Life - The Beatles'
-        
+    elif all(rules1) and optradio4 == 'option1': 
+        song = 'loud chaotic, day in the life like song from the 1930s'
+    elif all(rules1) and optradio4 == 'option2':  
+        song = 'loud slow phycadelic song from the 50s'
+    elif all(rules1) and optradio4 == 'option4':
+        song = 'psycadelic son from the 70s'
+    elif all(rules1) and optradio4 == 'option5':
+        song = 'fairy in the night by that one guy from tik tok lol'
+    elif all(rules1) and optradio4 == 'option6':
+        song = '1990'
+    elif all(rules1) and optradio == 'option7':
+        song = '2000-2010'
+    elif all(rules1) and optradio == 'option8':
+        song = 'Eleanor Rigby - The Beatles'
     elif all(rules1):
         song = 'Day in The Life - The Beatles'
     else: 
         if all(rules2) and optradio4 == 'option3':
+            song = 'Eleanor Rigby - The Beatles'
+        elif all(rules1) and optradio4 == 'option1': 
+            song = 'loud chaotic, fast song. mystical like song from the 1930s'
+        elif all(rules1) and optradio4 == 'option2':  
+            song = 'loud slow phycadelic song from the 50s'
+        elif all(rules1) and optradio4 == 'option4':
+            song = 'psycadelic son from the 70s'
+        elif all(rules1) and optradio4 == 'option5':
+            song = 'fairy in the night by that one guy from tik tok lol'
+        elif all(rules1) and optradio4 == 'option6':
+            song = '1990'
+        elif all(rules1) and optradio == 'option7':
+            song = '2000-2010'
+        elif all(rules1) and optradio == 'option8':
             song = 'Eleanor Rigby - The Beatles'
         else:
             song = 'something else'
