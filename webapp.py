@@ -27,17 +27,29 @@ def render_page1():
         alttext = 'Sgt. Pepper`s Lonely Hearts Club Band Album Cover'
     elif all(rules1) and optradio4 == 'option1': 
         song = 'Route 66 - Peggy Suave'
+        image = 'static/Daisy.jpg'
+        alttext = 'Daisy'
     elif all(rules1) and optradio4 == 'option2':  
         song = 'Tonight You Belong to Me - Lennon Sisters'
+        image = 'static/Daisy.jpg'
+        alttext = 'Daisy'
     elif all(rules1) and optradio4 == 'option4':
         song = 'The Man Who Stole The World - David Bowie'
+        image = 'static/Daisy.jpg'
+        alttext = 'Daisy'
     elif all(rules1) and optradio4 == 'option5':
         song = 'Fairy in the Night - Tik Tok'
+        image = 'static/Daisy.jpg'
+        alttext = 'Daisy'
     elif all(rules1) and optradio4 == 'option6':
-        song = ''
-    elif all(rules1) and optradio == 'option7':
-        song = '2000-2010'
-    elif all(rules1) and optradio == 'option8':
+        song = 'No Quarter - Led Zepplin'
+        image = 'static/Daisy.jpg'
+        alttext = 'Daisy'
+    elif all(rules1) and optradio4 == 'option7':
+        song = 'Creep - Radiohead'
+        image = 'static/Daisy.jpg'
+        alttext = 'Daisy'
+    elif all(rules1) and optradio4 == 'option8':
         song = 'Eleanor Rigby - The Beatles'
         image = 'static/revolver.jpg'
         alttext = 'Revolver Album Cover'
@@ -46,26 +58,44 @@ def render_page1():
     else: 
         if all(rules2) and optradio4 == 'option3':
             song = 'Eleanor Rigby - The Beatles'
+            image = 'static/Daisy.jpg'
+            alttext = 'Daisy'
         elif all(rules2) and optradio4 == 'option1': 
             song = 'loud chaotic, fast song. mystical like song from the 1930s'
+            image = 'static/Daisy.jpg'
+            alttext = 'Daisy'
         elif all(rules2) and optradio4 == 'option2':  
             song = 'loud slow phycadelic song from the 50s'
+            image = 'static/Daisy.jpg'
+            alttext = 'Daisy'
         elif all(rules2) and optradio4 == 'option4':
             song = 'psycadelic son from the 70s'
+            image = 'static/Daisy.jpg'
+            alttext = 'Daisy'
         elif all(rules2) and optradio4 == 'option5':
             song = 'fairy in the night by that one guy from tik tok lol'
+            image = 'static/Daisy.jpg'
+            alttext = 'Daisy'
         elif all(rules2) and optradio4 == 'option6':
             song = '1990'
+            image = 'static/Daisy.jpg'
+            alttext = 'Daisy'
         elif all(rules2) and optradio == 'option7':
             song = '2000-2010'
+            image = 'static/Daisy.jpg'
+            alttext = 'Daisy'
         elif all(rules2) and optradio == 'option8':
             song = 'Eleanor Rigby - The Beatles'
+            image = 'static/Daisy.jpg'
+            alttext = 'Daisy'
         elif all(rules2):
             song = 'Day in The Life - The Beatles'
+            image = 'static/Daisy.jpg'
+            alttext = 'Daisy'
         else:
             song = 'something else'
-            '''image = 'static/SGTpepper.WEBP'
-            alttext = 'daisy'''
+            image = 'static/SGTpepper.WEBP'
+            alttext = 'daisy'
     return render_template('page1.html', response = song, songimage = image, imagename = alttext)
    
     '''if optradio2 == 'option5':
